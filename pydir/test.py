@@ -8,10 +8,15 @@ import subprocess
 
 # Lets write some simple ass commands
 
+
+print("--------------------output start here onwards=====================")
+print("--------------------output start here onwards=====================")
+print("--------------------output start here onwards=====================")
+print("--------------------output start here onwards=====================")
+
 # This is just running a simple command in 1 line
 ip_info = subprocess.run(['curl', 'ipinfo.io'])
 print("#####################################################")
-# This gives peculiar formatting
 ip_info_2 = subprocess.run(['curl', 'ipinfo.io'])
 
 
@@ -19,8 +24,9 @@ ip_info_2 = subprocess.run(['curl', 'ipinfo.io'])
 
 for x in range(5):
     print("------------------------------------------------")
-    print(ip_info)
-    print(ip_info_2)
+    # print(ip_info)
+    # print(ip_info_2)
+    
 
 
 # Dummy to push comment in
