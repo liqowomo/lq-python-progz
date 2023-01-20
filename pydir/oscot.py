@@ -4,4 +4,4 @@
 Tests of ouptut commands to terminal 
 '''
 
-# subprocess package is recommened
+# subprocess package is recommened for 
