@@ -9,15 +9,18 @@ import subprocess
 # Lets write some simple ass commands
 
 # This is just running a simple command in 1 line
-ip_info = subprocess.run(['curl', 'ipinfo.io'], stdout=True)
+ip_info = subprocess.run(['curl', 'ipinfo.io'])
+print("#####################################################")
+# This gives peculiar formatting
+ip_info_2 = subprocess.run(['curl', 'ipinfo.io'])
 
 
 # Same above command now in a loop
 
 for x in range(5):
-    print("Printing the args: ", ip_info.args)  # printing the args
-    print("Printing the stdout:",ip_info.stdout)  # Prints nothing
-    print("Printingt the returncode:", ip_info.returncode)  # Prints
+    print("------------------------------------------------")
+    print(ip_info)
+    print(ip_info_2)
 
 
 # Dummy to push comment in
